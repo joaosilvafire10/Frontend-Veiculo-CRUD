@@ -1,0 +1,15 @@
+Lista comandos para rodar o arquivo frontend de veículos:
+
+npm install -g sass
+
+sass styles/main.scss dist/main.css
+
+npm install -g typescript
+
+tsc scripts/app.ts --outDir dist
+
+npm install -g sass
+
+npx sass styles/main.scss dist/main.css
+
+sass --watch styles/main.scss:dist/main.css
