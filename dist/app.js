@@ -55,27 +55,7 @@ form.addEventListener('submit', function (event) {
 function gerarNovoId() {
     inputId.value = gerarIdUnico();
 }
-/*function renderizarLista() {
-    const tabela = document.getElementById('lista').getElementsByTagName('tbody')[0];
-    tabela.innerHTML = '';
 
-    veiculos.forEach(function (v) {
-        const tr = document.createElement('tr');
-        tr.innerHTML = `
-      <td>${v.id}</td>
-      <td>${v.modelo}</td>
-      <td>${v.fabricacao}</td>
-      <td>${v.placa}</td>
-      <td>${v.vendido === true ? "Sim" : "Não"}</td>
-      <td>${v.quilometragem}</td>
-      <td>
-        <button onclick="editarVeiculo('${v.id}')">Editar</button>
-        <button onclick="excluirVeiculo('${v.id}')">Excluir</button>
-      </td>
-    `;
-        tabela.appendChild(tr);
-    });
-}*/
 function renderizarLista() {
     const tabela = document.getElementById('lista').getElementsByTagName('tbody')[0];
     tabela.innerHTML = '';
