@@ -1,4 +1,8 @@
-export const veiculos = [];
+export const veiculos = JSON.parse(localStorage.getItem('veiculos') || '[]');
+
+export function salvarVeiculos() {
+  localStorage.setItem('veiculos', JSON.stringify(veiculos));
+}
 
 export function gerarIdUnico() {
   if (veiculos.length === 0) return '1';
